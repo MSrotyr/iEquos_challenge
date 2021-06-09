@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.children {
+  flex-grow: 1;
+  background-color: pink;
+  padding: 2rem, 0;
+}
