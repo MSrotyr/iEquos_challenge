@@ -1,16 +1,15 @@
 import React from "react";
 import { useHistory } from "react-router";
-import "./Home.css";
+import styles from "./Home.module.css";
 
 export default function Home() {
   const history = useHistory();
 
   function clickHandler() {
-    history.push(`/library_create`);
+    history.push(`/create_library`);
   }
-
   return (
-    <div className="container">
+    <div className={styles.container}>
       <button onClick={clickHandler} className="button">
         Create A Library
       </button>

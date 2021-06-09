@@ -1,0 +1,9 @@
+.plus {
+  width: 2rem;
+  height: auto;
+}
+
+.bookForm {
+  display: flex;
+  flex-direction: column;
+}
