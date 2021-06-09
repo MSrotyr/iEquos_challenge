@@ -9,6 +9,7 @@ function App() {
     <Layout>
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/library_create" exact component={Home} />
         <Redirect to="/" />
       </Switch>
     </Layout>
