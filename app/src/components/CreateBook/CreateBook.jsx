@@ -36,25 +36,30 @@ export default function CreateBook({ sectionName }) {
             onSubmit={(event) => submitHandler(event)}
             className={styles.bookForm}
           >
+            <p>Enter details:</p>
             <input
+              className={styles.input}
               name="title"
               required
               onChange={(event) => handleChange(event)}
               placeholder="title"
             ></input>
             <input
+              className={styles.input}
               name="author"
               required
               onChange={(event) => handleChange(event)}
               placeholder="author"
             ></input>
-            <button className="button" type="submit">
-              Add to Library
-            </button>
+            <div>
+              <button className="button" type="submit">
+                Add to Library
+              </button>
+              <button onClick={cancelHandler} className="button">
+                Cancel
+              </button>
+            </div>
           </form>
-          <button onClick={cancelHandler} className="button">
-            Cancel
-          </button>
         </div>
       ) : (
         <img

@@ -7,6 +7,7 @@ export default function DisplayLibrary() {
 
   return (
     <div>
+      <h2>Your Library:</h2>
       {sections.map((sectionName) => (
         <div key={sectionName}>
           <h3>{sectionName}</h3>

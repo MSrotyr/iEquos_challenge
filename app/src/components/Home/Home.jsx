@@ -31,7 +31,7 @@ export default function Home() {
               Looks like you don&apos;t have a Library, would you like to create
               one?
             </h2>
-            <button onClick={clickHandler} className="button">
+            <button onClick={clickHandler} className="buttonLarge">
               Create A Library
             </button>
           </div>

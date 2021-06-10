@@ -12,13 +12,22 @@ code {
     monospace;
 }
 
-.button {
+.buttonLarge {
   padding: 1rem;
   background-color: pink;
   border-radius: 0.5rem;
   font-size: x-large;
 }
 
+.button {
+  background-color: pink;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.buttonLarge:hover,
 .button:hover {
   background-color: #bacba9;
 }
