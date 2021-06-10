@@ -20,11 +20,13 @@ export default function Home() {
     history.push(`/create_library/Fiction`);
   }
   return (
-    <div className={styles.outerContainer}>
-      <h1 className={styles.title}>The Amazing Book Library Creator</h1>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      <div>
+        <h1 className={styles.title}>The Amazing Book Library Creator</h1>
         {isLibrary ? (
-          <DisplayLibrary />
+          <div>
+            <DisplayLibrary />
+          </div>
         ) : (
           <div>
             <h2 className={styles.subTitle}>
@@ -33,7 +35,7 @@ export default function Home() {
             </h2>
             <button
               onClick={clickHandler}
-              className={`${styles.create} buttonLarge`}
+              className={`${styles.create} button large`}
             >
               Create A Library
             </button>

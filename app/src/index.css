@@ -12,24 +12,25 @@ code {
     monospace;
 }
 
-.buttonLarge {
-  padding: 1rem;
-  background-color: pink;
-  border-radius: 0.5rem;
+.large {
   font-size: x-large;
 }
 
 .button {
-  background-color: pink;
+  display: inline-block;
+  font-size: large;
+  background-color: #bacba9;
   border-radius: 0.5rem;
   padding: 1rem;
   margin-top: 1rem;
   margin-right: 1rem;
+  border: 1px solid transparent;
 }
 
 .buttonLarge:hover,
 .button:hover {
-  background-color: #bacba9;
+  background-color: pink;
+  border: 1px solid;
 }
 
 .body {

@@ -1,6 +1,12 @@
 .plus {
   width: 2rem;
   height: auto;
+  background-color: #bacba9;
+  border-radius: 50%;
+}
+
+.plus:hover {
+  background-color: pink;
 }
 
 .bookForm {
