@@ -3,6 +3,7 @@
   height: auto;
   background-color: #bacba9;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .plus:hover {
