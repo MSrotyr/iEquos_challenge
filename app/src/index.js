@@ -13,6 +13,8 @@ let store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+document.body.style = "background: pink;";
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

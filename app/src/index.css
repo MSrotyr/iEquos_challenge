@@ -31,3 +31,7 @@ code {
 .button:hover {
   background-color: #bacba9;
 }
+
+.body {
+  background-color: pink;
+}
