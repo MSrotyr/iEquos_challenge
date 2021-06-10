@@ -23,6 +23,11 @@ export default function CreateBook({ sectionName }) {
     }));
   }
 
+  function cancelHandler() {
+    setIsForm(false);
+    setBookData({});
+  }
+
   return (
     <div>
       {isForm ? (
@@ -47,7 +52,9 @@ export default function CreateBook({ sectionName }) {
               Add to Library
             </button>
           </form>
-          <button className="button">Cancel</button>
+          <button onClick={cancelHandler} className="button">
+            Cancel
+          </button>
         </div>
       ) : (
         <img

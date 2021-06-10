@@ -1,6 +1,14 @@
+.outerContainer {
+  height: 90%;
+}
+
 .container {
   display: flex;
   height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.title {
+  text-align: center;
 }

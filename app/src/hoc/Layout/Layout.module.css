@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+}
+
+.children {
+  flex-grow: 1;
+  width: 100%;
+  padding: 2rem, 0;
+}
+
+.home {
+  width: 3rem;
+  height: auto;
+  margin: 0.5rem;
+  padding: calc(0.5rem + 1px);
+}
+
+.home:hover {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+}

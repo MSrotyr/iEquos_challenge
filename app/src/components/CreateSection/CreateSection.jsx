@@ -13,6 +13,7 @@ export default function CreateSection({ sectionName }) {
 
   function clickHandler() {
     if (nextSection) history.push(`/create_library/${nextSection}`);
+    else history.push("./");
   }
 
   return (
@@ -26,8 +27,8 @@ export default function CreateSection({ sectionName }) {
         ))}
       </ul>
       <CreateBook sectionName={sectionName} />
-      <button onClick={clickHandler} className="button">
-        Next
+      <button onClick={clickHandler} className={`${styles.next} button`}>
+        {nextSection ? "Next" : "View Library"}
       </button>
     </div>
   );
