@@ -27,11 +27,14 @@ export default function Home() {
           <DisplayLibrary />
         ) : (
           <div>
-            <h2>
+            <h2 className={styles.subTitle}>
               Looks like you don&apos;t have a Library, would you like to create
               one?
             </h2>
-            <button onClick={clickHandler} className="buttonLarge">
+            <button
+              onClick={clickHandler}
+              className={`${styles.create} buttonLarge`}
+            >
               Create A Library
             </button>
           </div>
