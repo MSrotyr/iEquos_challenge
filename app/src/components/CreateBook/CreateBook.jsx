@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import plus from "../../assets/plus.svg";
 import styles from "./CreateBook.module.css";
+import * as actions from "../../actions.js";
 
-export default function CreateBook() {
+export default function CreateBook({ sectionName }) {
+  const dispatch = useDispatch();
   const [isForm, setIsForm] = useState(false);
   const [bookData, setBookData] = useState({});
-  const [books, setBooks] = useState([]);
 
   function submitHandler(event) {
     event.preventDefault();
-    setBooks((prevState) => [...prevState, bookData]);
+    dispatch(actions.addBook(sectionName, bookData));
     setBookData({});
     setIsForm(false);
   }
@@ -23,11 +25,6 @@ export default function CreateBook() {
 
   return (
     <div>
-      {books.map((book) => (
-        <div
-          key={book.title}
-        >{`"${book.title}" written by "${book.author}"`}</div>
-      ))}
       {isForm ? (
         <div>
           <form

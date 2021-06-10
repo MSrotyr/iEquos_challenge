@@ -1,9 +1,9 @@
-export function addSection(sectionName, books) {
+export function addBook(sectionName, book) {
   return {
     type: "ADD_SECTION",
     payload: {
       sectionName,
-      books,
+      book,
     },
   };
 }
