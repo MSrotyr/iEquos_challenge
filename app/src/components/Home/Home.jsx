@@ -6,7 +6,7 @@ export default function Home() {
   const history = useHistory();
 
   function clickHandler() {
-    history.push(`/create_library`);
+    history.push(`/create_library/Fiction`);
   }
   return (
     <div className={styles.container}>

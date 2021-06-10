@@ -9,7 +9,7 @@ function App() {
   const routes = (
     <Layout>
       <Switch>
-        <Route path="/create_library" component={CreateLibrary} />
+        <Route path="/create_library/:sectionName" component={CreateLibrary} />
         <Route path="/" exact component={Home} />
         <Redirect to="/" />
       </Switch>
